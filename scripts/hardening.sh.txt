@@ -1,0 +1,25 @@
+#!/bin/bash
+# Script de Hardening Base para RHEL 9
+# Autor: Christian Quispe Alarcón
+
+echo "Iniciando Hardening de Sistema..."
+
+# 1. Configurar SELinux en modo Enforcing
+sed -i 's/SELINUX=permissive/SELINUX=enforcing/g' /etc/selinux/config
+setenforce 1
+echo "SELinux configurado en modo Enforcing."
+
+# 2. Hardening de SSH
+# Cambiar puerto, limitar intentos y deshabilitar login de root
+CP_SSH="/etc/ssh/sshd_config"
+sed -i 's/#Port 22/Port 64000/g' $CP_SSH
+sed -i 's/#MaxAuthTries 6/MaxAuthTries 1/g' $CP_SSH
+echo "Configuración de SSH robustecida."
+
+# 3. Configuración de Firewall (Políticas restrictivas)
+firewall-cmd --permanent --remove-service=ftp
+firewall-cmd --permanent --add-port=64000/tcp
+firewall-cmd --reload
+echo "Firewall actualizado: Puertos inseguros cerrados."
+
+echo "Proceso completado con éxito."

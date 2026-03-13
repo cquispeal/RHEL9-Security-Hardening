@@ -1,0 +1,12 @@
+Configuración de referencia basada en el proyecto de Hardening
+
+Port 64000
+Protocol 2
+MaxAuthTries 1
+LoginGraceTime 20
+PermitRootLogin no
+Banner /etc/ssh/banner
+
+Solo permitir al usuario del proyecto
+
+AllowUsers cquispe
