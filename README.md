@@ -28,6 +28,8 @@ README.md: Resumen ejecutivo del proyecto.
 
 Red Hat Enterprise Linux 9
 
+![Evidencia Hardening RHEL](img/imagenes_III/ciberops_9.PNG)
+
 Wireshark (Análisis de tráfico FTP/SSH)
 
 ![Evidencia Hardening RHEL](img/imagenes_III/RHEL_13.png)
