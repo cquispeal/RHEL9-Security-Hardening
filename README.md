@@ -29,6 +29,7 @@ README.md: Resumen ejecutivo del proyecto.
 Red Hat Enterprise Linux 9
 
 Wireshark (Análisis de tráfico FTP/SSH)
+img/imagenes III/RHEL_10.png
 
 Nmap (Escaneo de vulnerabilidades)
 
