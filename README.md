@@ -30,7 +30,7 @@ Red Hat Enterprise Linux 9
 
 Wireshark (Análisis de tráfico FTP/SSH)
 
-img/imagenes III/RHEL_10.png
+![Evidencia Hardening RHEL](img/imagenes_III/rhel_10.png)
 
 Nmap (Escaneo de vulnerabilidades)
 
