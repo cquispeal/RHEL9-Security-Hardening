@@ -38,7 +38,7 @@ Nmap (Escaneo de vulnerabilidades)
 
 Oracle VirtualBox
 
-Autor: Christian Alberto Quispe Alarcón
+Autor: Christian A. Quispe A.
 
 Rol: Analista SOC en formación
 
